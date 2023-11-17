@@ -13,7 +13,7 @@ public class MyInput {
             System.out.println("Please type one word, followed by enter:");
             System.out.println("To quit, please type: stop");
             userinput = scan.nextLine(); //<--Användarens textrad.
-            if (userinput.equals("stop")) {
+            if (test.getCounter().didWeStop(userinput)) { //<-- Kollar om användaren skrivit stop
                 break;
             }
             test.processInput(userinput);//<--Kör funktionen.

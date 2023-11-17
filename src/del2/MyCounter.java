@@ -18,6 +18,10 @@ public class MyCounter {
             }
         }
     }
+
+    public boolean didWeStop(String str) {
+        return str.equals("stop");
+    }
     public void addRow() {
         this.rows++;
     }
